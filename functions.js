@@ -4,12 +4,12 @@ function helloWorld(message) {
 }
 helloWorld("helloworld"); //arguments
 
-//imediate onvocation with anonymous function
+//imediate invocation with anonymous function
 (function () {
   console.log("hello world1111");
 })();
 
-//arroew function
+//arrow function
 let fun = () => {
   console.log("this is from fun variable");
 };

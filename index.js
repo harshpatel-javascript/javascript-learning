@@ -11,6 +11,7 @@ document.getElementById("let").innerHTML += "<br>" + newLet;
 // j=0; //gives error : Uncaught SyntaxError: Missing initializer in const declaration
 // console.log(j);
 
+//block scope of let
 function passValue() {
   let newLet = "hello there";
   document.getElementById("let").innerHTML += "<br>" + newLet;
@@ -18,7 +19,7 @@ function passValue() {
 passValue();
 document.getElementById("let").innerHTML += "<br>" + newLet;
 
-//conditions
+//conditions : if & else-if statement
 function hello() {
   let val = prompt("let me check whether your fav. num is even or odd?");
   console.log(typeof val);
@@ -26,7 +27,10 @@ function hello() {
     alert("you don't want to say your fav num!!!");
   } else if (val % 2 != 0) {
     alert("your fav. num is odd.");
-  } else {
+  } else if(val == null){
+    alert("value is cancelled");
+  }
+  else {
     alert("your fav. num is even.");
   }
 }
