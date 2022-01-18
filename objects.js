@@ -25,3 +25,11 @@ console.log(user);
 //deleting the properties
 delete user.tails;
 console.log(user);
+
+//in operator
+console.log("name" in user);
+
+// for...in operator
+for(let key in user){
+    console.log(key + " : " + user[key])
+}
