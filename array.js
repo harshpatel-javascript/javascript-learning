@@ -25,7 +25,7 @@ console.log(arr);
 arr.sort();
 console.log(arr);
 
-//splice method : it inserts deltes and override 
+//splice method : it inserts deletes and override 
 let arr1 = ["I", "study", "JavaScript"];
 
 //from index 0

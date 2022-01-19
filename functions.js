@@ -31,7 +31,30 @@ function callByVal(variable) {
   variable += 1;
   console.log(variable);
 }
-callByVal(person.age);
-console.log(person.age);
+ callByVal(person.age);
+console.log("pass by value : "+person.age);
 callByRef(person);
 console.log(person);
+
+
+//functions and closures
+function makeCounter() {
+  let count = 0;
+
+  return function() {
+    return count++;
+  };
+}
+
+let counter = makeCounter();
+alert(counter());
+
+let name = "John";
+
+function sayHi() {
+  alert("Hi, " + name);
+}
+
+name = "Pete";
+
+sayHi();
