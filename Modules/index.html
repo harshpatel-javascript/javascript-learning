@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Import an d export module</title>
+</head>
+<body>
+    <h1>About import and exporting ogf module</h1>
+    <p>module is noting but the simpler javascript file which consist of functions and some parameters.</p>
+    <script type="module" > //type = modle is necessary otherwise it will give uncaught syntax error
+        import {sayHi} from './sayHi.js';
+        alert(sayHi); // function...
+sayHi('John'); 
+    </script>
+</body>
+</html>
