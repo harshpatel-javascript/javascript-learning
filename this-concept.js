@@ -8,13 +8,10 @@ let user1 = {
         console.log(this.name);
     }
 }; 
-
 let admin = user1;
 user1 = null;
-
 admin.sayHi(); // it gives us TypeError : cannot read property of null if we don't use "this"
 //if we use "this" in method then we can access method  through any reference 
-
 
 //arrrow function have no "this"
 //they take reference from outer normal function like,
