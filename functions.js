@@ -47,7 +47,10 @@ function makeCounter() {
 }
 
 let counter = makeCounter();
-alert(counter());
+
+alert(counter()); // output : 0
+alert(counter()); // output : 1
+alert(counter()); // output: 2
 
 let name = "John";
 
