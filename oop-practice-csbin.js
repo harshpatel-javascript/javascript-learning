@@ -8,8 +8,6 @@ function makePerson(name, age) {
   person.name = name;
   person.age = age;
   return person;
-
-
 }
 const vicky = makePerson('Vicky', 24);
 
@@ -40,7 +38,6 @@ function personFromPersonStore(name, age) {
   person.age = age;
   person.greet = personStore.greet;
   return person;
-
 }
 const sandra = personFromPersonStore('Sandra', 26);
 
@@ -68,7 +65,6 @@ function PersonConstructor() {
 	this.greet = function(){
     console.log("hello")
   }
-
 }
 // /********* Uncomment this line to test your work! *********/
 const simon = new PersonConstructor;
@@ -82,7 +78,6 @@ function personFromConstructor(name, age) {
   personObject.name = name;
   personObject.age = age;
 	return personObject;
-
 }
 const mike = personFromConstructor('Mike', 30);
 
